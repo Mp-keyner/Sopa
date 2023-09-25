@@ -92,7 +92,7 @@ button::-moz-focus-inner {
 /* indicates that the word has been found */
 #Palabras .wordFound {
     text-decoration: line-through;
-    color: gray;
+    color: black;
 }
 
 /**
