@@ -121,7 +121,8 @@ button::-moz-focus-inner {
     background-image: url("https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/8.png?alt=media&token=e213c385-d239-4ec4-8774-dbad992d2600");
 }
 
-#solve {
+#solve,
+#solv {
     padding: 0.6pc;
     border: 1px solid black;
     border-radius: 8px;
@@ -130,6 +131,12 @@ button::-moz-focus-inner {
     transition: all 0.3s ease-in-out;
 }
 
-#solve:hover {
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#solve:hover,
+#solv:hover {
     transform: scale(1.1);
 }
