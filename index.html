@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Emytic Sopa de letras</title>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script language="javascript" type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="wordfind.js"></script>
+    <script type="text/javascript" src="wordfindgame.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Mp-keyner/proyecto-PAE/main/img/favicon.ico"
+        type="image/x-icon">
+</head>
+
+<body class="fondo1">
+    <div class="Container">
+        <h1>Encuentra las 8 palabras importante <br>para mantener buenas relaciones</h1>
+        <div class="containerD">
+            <div id='juego'></div>
+            <div>
+                <div id='Palabras'></div>
+
+                <button id='solve'>Resolver el juego</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var words = ['ayudar', 'colaborar', 'compartir', 'dialogar', 'respetar', 'saludar'];
+        var gamePuzzle = wordfindgame.create(words, '#juego', '#Palabras');
+
+        var puzzle = wordfind.newPuzzle(words, { height: 18, width: 18, fillBlanks: false });
+        wordfind.print(puzzle);
+
+        $('#solve').click(function () { wordfindgame.solve(gamePuzzle, words); });
+
+    </script>
+
+</body>
+
+</html>
