@@ -151,7 +151,7 @@ a {
     top: 0;
     right: 0;
 }
-@media (max-width: 300px) {
+@media (min-width: 300px) {
     #juego .puzzleSquare {
         height: 70px;
         width: 70px;
