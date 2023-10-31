@@ -114,7 +114,6 @@ button::-moz-focus-inner {
 .containerD {
     display: flex;
     align-items: center;
-    gap: 2pc;
 }
 
 .fondo1 {
@@ -156,7 +155,7 @@ a {
 @media (min-width: 300px) {
     #juego .puzzleSquare {
         height: 30px;
-        width: 26px;
+        width: 24px;
     }
     .containerD {
         flex-direction: column;
