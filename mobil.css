@@ -153,15 +153,13 @@ a {
 }
 @media (min-width: 300px) {
     #juego .puzzleSquare {
-        height: 70px;
-        width: 70px;
+        height: 30px;
+        width: 26px;
     }
     .containerD {
         flex-direction: column;
     }
-    *{
-        font-size: 3.3pc;
-    }
+   
     #Palabras {
         width: 100%;
     }
